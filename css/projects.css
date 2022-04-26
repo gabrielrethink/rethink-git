@@ -1,0 +1,67 @@
+.cardProject {
+  width: 263px;
+  height: 171px;
+  left: 947px;
+  top: 244px;
+  background: #ffffff;
+  border: 1px solid #eaecee;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding-left: 24px;
+  margin-right: 29px;
+  margin-bottom: 29px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  /* margin-bottom: 24px; */
+}
+
+.title img {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.title h1 {
+  margin-left: 16px;
+  width: 47px;
+  height: 27px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  color: #242d35;
+}
+
+.cardProject p {
+  margin: 16px 0;
+  width: 209px;
+  height: 36px;
+  left: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #4f5b67;
+}
+
+.cardProject a {
+  width: 59px;
+  height: 18px;
+  left: 24px;
+  top: 128px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #3333d1;
+}
