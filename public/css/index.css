@@ -1,0 +1,79 @@
+.card{
+    width: 249px;
+    height: 332px;
+    background: #FFFFFF;
+    border: 1px solid #EAECEE;
+    border-radius: 12px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.card > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.name{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 0.8em;
+    color: #242D35;
+}
+
+.company{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 0.3em;
+    color: #4F5B67;
+}
+
+.description{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    color: #A8B0B9;
+}
+
+.number{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #373F47;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.bar-vertical{
+    width: 0px;
+    height: 35px;
+    border: 1px solid #F1F1F1;
+}
+
+.card > button{
+    margin-top: 2.6em;
+    width: 112px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #EAECEE;
+    box-sizing: border-box;
+    border-radius: 32px;
+    font-size: 14px;
+}
