@@ -1,2 +1,0 @@
-# rethink-git
- RETHINK GIT
