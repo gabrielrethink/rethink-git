@@ -1,2 +1,2 @@
 # rethink-git
- RETHINK GIT
+ RETHINK GIT - Gabriel Melo
