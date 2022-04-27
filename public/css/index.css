@@ -6,6 +6,8 @@ body{
   display: flex;
   flex-direction: column;
   margin: 0;
+  max-width: 1280px;
+  max-height: 720px;
 }
 
 .titleImg{
@@ -73,14 +75,14 @@ h1{
 }
 
 .indivCard{
+  width: 249px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   border: 1px solid #EAECEE;
-  width: 15vw;
-  min-width: 150px;
+  max-height: 332px;
 }
 
 .profilePic{
