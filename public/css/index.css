@@ -333,3 +333,8 @@ footer {
 .statIcon {
   margin: 0 26px;
 }
+.backButton {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
