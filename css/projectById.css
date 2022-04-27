@@ -23,7 +23,6 @@
 }
 
 .buttonBack {
-  background-color: rebeccapurple;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -40,8 +39,9 @@
   border-radius: 32px;
 }
 
-.buttonBack > button {
+/* .buttonBack {
   border: none;
+  border: 1px solid #eaecee;
   background-color: #ffffff;
   font-weight: 500;
   height: 14px;
@@ -59,7 +59,7 @@
   order: 1;
   flex-grow: 0;
   margin: 0px 8px;
-}
+} */
 
 .corpo {
   display: flex;
@@ -70,8 +70,6 @@
   margin-right: 80px;
   width: 698px;
   height: 288px;
-  left: 71px;
-  top: 279px;
 }
 
 .Overview {
@@ -81,8 +79,6 @@
 .Overview > h2 {
   width: 92px;
   height: 36px;
-  left: 71px;
-  top: 219px;
 
   font-family: "Roboto";
   font-style: italic;
@@ -112,8 +108,6 @@
 
   width: 698px;
   height: 288px;
-  left: 71px;
-  top: 279px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -122,6 +116,7 @@
   color: #373f47;
 }
 .options {
+  /* background-color: red; */
   width: 360px;
 }
 
@@ -140,15 +135,10 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  position: relative;
 }
 
 .card > svg {
   margin-left: 30.32px;
-  left: 26.33%;
-  right: 31.25%;
-  top: 12.5%;
-  bottom: 12.5%;
   margin-right: 31.5px;
   margin-top: 34px;
 }
@@ -171,6 +161,5 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-
   color: #4f5b67;
 }

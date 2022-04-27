@@ -1,6 +1,6 @@
 /* INPUT */
 
-.input {
+main > input {
   width: 545px;
   height: 40px;
   margin-top: 42px;
@@ -10,11 +10,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.input > input {
-  border: none;
-  margin-left: 16px;
+  background: #fafafa;
+  background-image: url(/icons/searchIcon.png);
+  background-position: 96%;
+  background-repeat: no-repeat;
+  padding-left: 16px;
 }
 
 .input > svg {
