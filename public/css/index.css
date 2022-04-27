@@ -190,7 +190,7 @@ footer {
 }
 
 .projectCard {
-  width: 240px;
+  width: 263px;
   height: 171px;
   margin: 10px;
   padding: 22px;
@@ -238,7 +238,7 @@ footer {
   font-size: 12px;
   line-height: 150%;
   color: #3333d1;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .projectBody {
