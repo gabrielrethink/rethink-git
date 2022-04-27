@@ -14,22 +14,27 @@ body{
 }
 
 nav{
-  width: 1280px;
-  height: 300px;
+  position:fixed; top:0; left:0%;
+  display: flex;
+  width: 100vw;
+  height: 50px;
   display: flex;
   background-color: #343434;
 }
+
 body{
   width: 100vw;
   height: 84vh;
   background-color: #fff;
 }
 
+
 .container {
+  display: flex;
   width: 30%; /* define a largura do campo */ 
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: static;
   margin-top: 70px;
   margin-left: 100px;
 }
@@ -43,7 +48,6 @@ body{
 }
 
 .button{
-  position: absolute;   
   top: 0; 
   right: 0;
   width: 20px;
@@ -51,6 +55,7 @@ body{
   margin-top: 10px;
   margin-bottom: 10px;
   background: #FAFAFA;
+  z-index: -1;
 }
 
 h1{
@@ -182,9 +187,8 @@ td + td, th+th  {
 
 
 footer{
-  display: block;
   width: 100vw;
   height: 3vh;
   background-color: #343434;
-  position:absolute; bottom:0; left:0%;
+  position:fixed; bottom:0; left:0%;
 }
