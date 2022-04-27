@@ -91,6 +91,86 @@ nav > img{
     flex-wrap: wrap;
 }
 
+.card{
+    width: 249px;
+    height: 332px;
+    background: #FFFFFF;
+    border: 1px solid #EAECEE;
+    border-radius: 12px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.card > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.name{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 0.8em;
+    color: #242D35;
+}
+
+.company{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 0.3em;
+    color: #4F5B67;
+}
+
+.description{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    color: #A8B0B9;
+}
+
+.number{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #373F47;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.bar-vertical{
+    width: 0px;
+    height: 35px;
+    border: 1px solid #F1F1F1;
+}
+
+.card > button{
+    margin-top: 2.6em;
+    width: 112px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #EAECEE;
+    box-sizing: border-box;
+    border-radius: 32px;
+    font-size: 14px;
+}
+
 .card-project{
     background: #FFFFFF;
     border: 1px solid #EAECEE;
@@ -159,4 +239,136 @@ footer{
     position: fixed;
     left: 0px;
     bottom: 0px;
+}
+
+.product-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-title > h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: #242D35;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px 12px 12px;
+    width: 108px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #EAECEE;
+    box-sizing: border-box;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.btn > button{
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    color: #0C1116;
+}
+
+.main-project{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.9em;
+}
+
+.layout{
+    width: 60%;
+}
+
+.overview{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overview > h2{
+    font-style: italic;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.status{
+    width: 62px;
+    height: 24px;
+    background: #44C13C;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.status > p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    color: #F6FFF0;
+}
+
+.project-description{
+    margin-top: 2.4em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.p2{
+    margin-top: 2em;
+}
+
+.infos{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #EAECEE;
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 360px;
+    height: 86px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.info-details{
+    margin-left: 30px;
+}
+
+.info-description{
+    margin-bottom: 0.4em;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.info-invoicing{
+    font-weight: 300;
+    color: #4F5B67;
 }
