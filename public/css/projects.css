@@ -1,0 +1,65 @@
+.projectAllCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 50px;
+}
+
+.projectCard {
+    width: 240px;
+    height: 171px;
+    margin: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #ffffff;
+    border: 1px solid #eaecee;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.projectCardTitle {
+    display: flex;
+    align-items: center;
+}
+
+.projectCardTitle>img {
+    margin-right: 16px;
+    height: 36px;
+    width: 36px;
+    border-radius: 4px;
+}
+
+.projectCardTitle>h1 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    font-size: 18px;
+    color: #242d35;
+}
+
+.projectCard>p {
+    margin-top: 16px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #4f5b67;
+}
+
+.projectCard>a {
+    font-family: "Roboto";
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #3333d1;
+    margin-top: 8px;
+}
