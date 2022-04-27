@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-body{
+body {
     margin: auto;
     width: 1280px;
     height: 720px;
@@ -69,7 +69,7 @@ footer {
 
 main {
     margin: 142px 71px;
-    
+
 }
 
 .search {
@@ -378,10 +378,20 @@ button {
     font-weight: 500;
     letter-spacing: 0em;
     text-align: left;
+    color: #373F47;
 
+}
 
+.goBack {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    color: #0C1116;
 
+}
 
-
-
+.goBack > svg{
+    margin-right: 9px;
 }
