@@ -58,9 +58,128 @@ h1{
   line-height: 21px;
   color: #808080;
 }
+
 .title{
   margin-left: 110px;
   margin-top: 60px;
   border-left: #343434 5px solid;
   padding-left: 10px;
+}
+
+.peopleCard{
+  margin: 5vh 5vw;
+  gap: 5vw;
+  display: flex;
+}
+
+.indivCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #EAECEE;
+  width: 15vw;
+  min-width: 150px;
+}
+
+.profilePic{
+  border-radius: 100%;
+  margin: 3vh 0 1vh 0;
+}
+
+.indivCard > .indivName{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 0;
+
+  /* identical to box height, or 21px */
+  color: #242D35;
+
+  text-align: center;
+}
+.indivCard > .indivJob{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+  
+  text-align: center;
+  margin-top: 01vh;
+  /* Gray/600 */
+  
+  color: #4F5B67;
+}
+table{
+  margin: 2vh 0;
+}
+th{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;  
+  /* identical to box height, or 18px */
+  
+  text-align: center;
+  
+  /* Gray/400 */
+  
+  color: #A8B0B9;
+}
+td{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  
+  text-align: center;
+  width: 30%;
+  /* Gray/700 */
+  
+  color: #373F47;
+}
+
+td + td, th+th  { 
+  border-left: 2px solid #F1F1F1; 
+  /* Gray/100 */
+
+  /* transform: rotate(90deg); */
+}
+.seeIndiv{
+  left: calc(50% - 112px/2);
+  bottom: 28px;
+
+  /* Base/background white */
+
+  background: #FFFFFF;
+  /* Gray/200 */
+
+  border: 1px solid #EAECEE;
+  box-sizing: border-box;
+  border-radius: 32px;
+  background-color: #fff;
+  border-radius: 40px;
+  width: 60%;
+  padding: 3%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+  
+  
+  /* Gray/900 */
+  
+  color: #0C1116;
+  margin-bottom: 3vh;
+
 }
