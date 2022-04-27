@@ -43,7 +43,7 @@ body{
   padding-left: 71px;
   padding-right: 71px;
   margin-bottom: 94px;
-  width: 1280px;
+  max-width: 1280px;
 }
 
 /*----------*/
