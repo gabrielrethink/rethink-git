@@ -1,0 +1,176 @@
+.title {
+  display: flex;
+  margin-top: 53px;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 1140px;
+  /* background-color: red; */
+}
+
+.title > h1 {
+  width: 206px;
+  height: 43px;
+  left: 71px;
+  margin-right: 824px;
+  top: 153px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  color: #242d35;
+}
+
+.buttonBack {
+  background-color: rebeccapurple;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px 12px 12px;
+
+  width: 108px;
+  height: 40px;
+  left: 1101px;
+  top: 154px;
+
+  background: #ffffff;
+  border: 1px solid #eaecee;
+  box-sizing: border-box;
+  border-radius: 32px;
+}
+
+.buttonBack > button {
+  border: none;
+  background-color: #ffffff;
+  font-weight: 500;
+  height: 14px;
+  left: 36px;
+  top: 13px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #0c1116;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.corpo {
+  display: flex;
+  margin-top: 23px;
+}
+
+.description {
+  margin-right: 80px;
+  width: 698px;
+  height: 288px;
+  left: 71px;
+  top: 279px;
+}
+
+.Overview {
+  display: flex;
+}
+
+.Overview > h2 {
+  width: 92px;
+  height: 36px;
+  left: 71px;
+  top: 219px;
+
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 150%;
+  color: #242d35;
+  margin-right: 20px;
+}
+
+.Overview > button {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  width: 62px;
+  height: 24px;
+  background: #44c13c;
+  border-radius: 12px;
+}
+
+.description > p {
+  margin-top: 24px;
+
+  width: 698px;
+  height: 288px;
+  left: 71px;
+  top: 279px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #373f47;
+}
+.options {
+  width: 360px;
+}
+
+.card {
+  margin-bottom: 20px;
+  display: flex;
+  height: 86px;
+
+  width: 360px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  border: 1px solid #eaecee;
+  box-sizing: border-box;
+  border-radius: 12px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+}
+
+.card > svg {
+  margin-left: 30.32px;
+  left: 26.33%;
+  right: 31.25%;
+  top: 12.5%;
+  bottom: 12.5%;
+  margin-right: 31.5px;
+  margin-top: 34px;
+}
+
+.name {
+  margin-top: 20px;
+  margin-bottom: 8px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #373f47;
+}
+
+.likes {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #4f5b67;
+}
