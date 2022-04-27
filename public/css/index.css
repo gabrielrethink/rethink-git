@@ -149,18 +149,13 @@ td{
 
 td + td, th+th  { 
   border-left: 2px solid #F1F1F1; 
-  /* Gray/100 */
-
-  /* transform: rotate(90deg); */
 }
 .seeIndiv{
   left: calc(50% - 112px/2);
   bottom: 28px;
 
-  /* Base/background white */
 
   background: #FFFFFF;
-  /* Gray/200 */
 
   border: 1px solid #EAECEE;
   box-sizing: border-box;
@@ -173,12 +168,7 @@ td + td, th+th  {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  line-height: 100%;
-  /* identical to box height, or 14px */
-  
-  
-  /* Gray/900 */
-  
+  line-height: 100%;  
   color: #0C1116;
   margin-bottom: 3vh;
 

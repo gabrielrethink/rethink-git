@@ -1,2 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto:wght@100;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto&display=swap");
+
+body{
+    /* background-color: aqua; */
+}
+.projectCards{
+    margin: 5vh 5vw;
+    gap: 5vw;
+    display: flex;
+
+}
+
+.indivProject{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #EAECEE;
+    width: 15vw;
+    min-width: 150px;
+}
+.projectIcon{
+    width: 4vh;
+    height: 4vh;
+    margin: 2vh;
+    margin-right: 1vh;
+}
+.projectName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+
+
+    /* Gray/800 */
+
+    color: #242D35;
+}
+
+.projectDescription{
+    margin: 2vh;
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #4F5B67;
+}
+
+a{
+    text-decoration:none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #3333D1;
+}
