@@ -35,7 +35,7 @@ img {
   height: 33px;
 }
 main {
-  margin: 142px 30px;
+  margin: 142px 71px;
 }
 
 .search {
@@ -233,6 +233,9 @@ footer {
 
 .projectBody {
   display: flex;
+  width: 698px;
+  height: 288px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -276,17 +279,8 @@ footer {
   border-radius: 12px;
 }
 
-.projectDescription {
-  width: 698px;
-}
 .projectStats {
-  width: 360px;
-  margin-left: 80px;
   background: red;
-}
-.showTitle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 80px;
+  width: 100px;
+  height: 100px;
 }
