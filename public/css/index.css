@@ -7,20 +7,19 @@ body{
   flex-direction: column;
   margin: 0;
   max-width: 1280px;
-  max-height: 720px;
 }
 
 .titleImg{
-  margin: auto;
+  margin: 10px auto;
 }
 
-.header{
-  width: 100vw;
-  height: 13vh;
+nav{
+  width: 1280px;
+  height: 300px;
   display: flex;
+  background-color: #343434;
 }
-
-.mid{
+body{
   width: 100vw;
   height: 84vh;
   background-color: #fff;
@@ -40,6 +39,7 @@ body{
   height: 40px;
   border-radius: 40px;
   padding: 0 20px;
+  background: #FAFAFA;
 }
 
 .button{
@@ -50,6 +50,7 @@ body{
   height: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+  background: #FAFAFA;
 }
 
 h1{
@@ -69,9 +70,13 @@ h1{
 }
 
 .peopleCard{
-  margin: 5vh 5vw;
-  gap: 5vw;
+  margin: 0 0 100px 0;
+  gap: 3vw;
+  justify-content: center;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
 }
 
 .indivCard{
@@ -82,7 +87,6 @@ h1{
   align-items: center;
   border-radius: 10px;
   border: 1px solid #EAECEE;
-  max-height: 332px;
 }
 
 .profilePic{
@@ -97,10 +101,10 @@ h1{
   font-size: 14px;
   line-height: 150%;
   margin-bottom: 0;
-
+  
   /* identical to box height, or 21px */
   color: #242D35;
-
+  
   text-align: center;
 }
 .indivCard > .indivJob{
@@ -155,10 +159,10 @@ td + td, th+th  {
 .seeIndiv{
   left: calc(50% - 112px/2);
   bottom: 28px;
-
-
+  
+  
   background: #FFFFFF;
-
+  
   border: 1px solid #EAECEE;
   box-sizing: border-box;
   border-radius: 32px;
@@ -173,5 +177,14 @@ td + td, th+th  {
   line-height: 100%;  
   color: #0C1116;
   margin-bottom: 3vh;
+  
+}
 
+
+footer{
+  display: block;
+  width: 100vw;
+  height: 3vh;
+  background-color: #343434;
+  position:absolute; bottom:0; left:0%;
 }
