@@ -45,7 +45,7 @@ const gitGetUsers = async (users) => {
     <small>${user.company}</small>
     <div class="table">
       <div class="tableProjects">
-        <p>Prjects</p>
+        <p>Projects</p>
         <small>${user.public_repos}</small>
       </div>
       <div class="tableStars">
@@ -57,11 +57,14 @@ const gitGetUsers = async (users) => {
         <small>${user.followers}</small>
       </div>
     </div>
-    <button id="profile">View Profile</button>
+    <button onclick="getButtonProfile('${user.login}')" type="click" id="profile">View Profile</button>
   </div>
-  
     `;
   });
+};
+
+const getButtonProfile = (user) => {
+  window.location.href = `projects.html?user=${user}`;
 };
 
 window.addEventListener("DOMContentLoaded", () => gitGetUsers(users));
