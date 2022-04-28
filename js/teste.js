@@ -1,15 +1,25 @@
-const cards_div = document.querySelector(".userCard");
+const cards_div = document.querySelector(".allCards");
 
 let users = [
-  "fabianakamo",
   "arthur-vargas",
   "MilagreRethink",
   "loubackrethink",
   "filiperethink",
   "gabrielrethink",
-  "luisrethink",
+  "vidallarissa",
+  "marcosrezrethink",
+  "mateushfmrethink",
   "AnaClara-rethink",
+  "amandadclsRethink",
+  "luisrethink",
   "lucaspaula6",
+  "carolinavaleriano",
+  "fabianakamo",
+  "FelipeReggiane",
+  "fernando-henrique2001",
+  "gabsrethink",
+  "Luisrethink",
+  "sthephanytezza-dev",
 ];
 
 const gitGetUsers = async (users) => {
@@ -49,8 +59,8 @@ const gitGetUsers = async (users) => {
     </div>
     <button id="profile">View Profile</button>
   </div>
+  
     `;
-    console.log(user);
   });
 };
 
