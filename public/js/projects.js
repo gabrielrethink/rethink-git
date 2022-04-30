@@ -219,7 +219,7 @@ const renderProjects = async () =>{
             
         };
         template=`
-        <div class="indivProject" id="indivProject">
+        <div class="indivProject" id="indivProject"  onClick="verProjeto('${login}', '${info.name}')">
         <div class="projectName" id="projectName">
           ${info.name}
         </div>
@@ -253,30 +253,35 @@ const renderProjects = async () =>{
     });
 }
 
+const verProjeto = (login, name) => {
+  window.location.assign("/public/projectShow.html?login="+login+"&name="+name);
+
+}
+
 const getColor = (color) =>{
   return colors[color];
-  let temp;
-  switch (color) {
-    case 'Java':
-      temp='#b07219';
-      break;
-    case 'JavaScript':
-        temp='#f1e05a';
-        break;
-    case 'HTML':
-        temp='#e34c26';
-        break;
-    case 'TypeScript':
-        temp='#2b7489';
-        break;
-    case 'CSS':
-        temp='#563d7c';
-        break;
-    default:
-        temp='#fff'
-        break;
-  }
-  return temp;
+  // let temp;
+  // switch (color) {
+  //   case 'Java':
+  //     temp='#b07219';
+  //     break;
+  //   case 'JavaScript':
+  //       temp='#f1e05a';
+  //       break;
+  //   case 'HTML':
+  //       temp='#e34c26';
+  //       break;
+  //   case 'TypeScript':
+  //       temp='#2b7489';
+  //       break;
+  //   case 'CSS':
+  //       temp='#563d7c';
+  //       break;
+  //   default:
+  //       temp='#fff'
+  //       break;
+  // }
+  // return temp;
 }
 
 
