@@ -96,6 +96,7 @@ h1{
 
 .profilePic{
   border-radius: 100%;
+  width: 100px;
   margin: 3vh 0 1vh 0;
 }
 

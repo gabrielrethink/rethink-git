@@ -1,24 +1,51 @@
 const peopleCard = document.getElementById("peopleCard");
-let users =  ["lucaspaula6", "luisrethink", "AnaClara-rethink", "lucaspaula6"];
+
+const userName="lucaspaula6";
+const token="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";
+
+let users =  [  "arthur-vargas",
+        "MilagreRethink",
+        "loubackrethink",
+        "filiperethink",
+        "gabrielrethink",
+        "vidallarissa",
+        "marcosrezrethink",
+        "mateushfmrethink",
+        "AnaClara-rethink",
+        "amandadclsRethink",
+        "luisrethink",
+        "lucaspaula6",
+        "carolinavaleriano",
+        "fabianakamo",
+        "FelipeReggiane",
+        "fernando-henrique2001",
+        "gabsrethink",
+        "Luisrethink",
+        "sthephanytezza-dev",];
 let template = "";
 
 const gitGetUsers = async (users) =>{
     users.map(async (user) => {
-        user = await fetch(`https://api.github.com/users/${user}`).then((res) => res.json()
-        );
+        user = await fetch(`https://api.github.com/users/${user}`, 
+        {
+            headers: { Authorization: "Basic" + btoa(`${userName}:${token}`) },
+          }
+        ).then((res) => res.json());
         
         let info = {
-            name: user.name,
-            company: user.company,
+            login: user.login,
+            name: (user.name== null)? user : user.name,
+            company: (user.company==null)? "Rethink" : user.company,
             repos: user.public_repos,
             followers: user.followers,
+            avatar: user.avatar_url,
         };
         // console.log(user);
-        template+=`
+        template=`
         <div class="indivCard">
-        <img src="" id="${info.name}" class="profilePic" alt="">
+        <img src="${info.avatar}" id="profilePic" class="profilePic" alt="">
         <p class="indivName" id="indivName">${info.name}</p>
-        <p class="indivJob" id="indivJob">Dan Abramov</p>
+        <p class="indivJob" id="indivJob">${info.company}</p>
         <table>
         <tr>
         <th>Projects</th>
@@ -26,17 +53,21 @@ const gitGetUsers = async (users) =>{
         <th>Followers</th>
         </tr>
         <tr>
-        <td id="indivProjects">24</td>
-        <td id="indivStars">132</td>
-        <td id="indivFollowers">31</td>
+        <td id="indivProjects">${info.repos}</td>
+        <td id="indivStars">?</td>
+        <td id="indivFollowers">${info.followers}</td>
         </tr>
         </table>
-        <button class="seeIndiv" id="seeIndiv">Ver Perfil</button>
+        <button class="seeIndiv" id="seeIndiv" onClick="verProjetos('${info.login}')">Ver Perfil</button>
         </div>`;
         // console.log(template);
+        peopleCard.innerHTML+=template;
     });
     console.log(template);
-    peopleCard.innerHTML=template;
 };
+const verProjetos = (user) =>{
+    console.log(user);
+    window.location.assign("/public/projects.html?login="+user);
+}
 
 window.addEventListener("DOMContentLoaded", () => gitGetUsers(users));
