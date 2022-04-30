@@ -3,34 +3,34 @@
 
 
 .projectCards{
-    margin: 5vh 5vw;
-    gap: 5vw;
+    padding: 5vh;
+    margin: auto;
     display: flex;
-
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: space-evenly;
+    width: 80vw;
+    
 }
 
 .indivProject{
-    display: block;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     border-radius: 10px;
     border: 1px solid #EAECEE;
-    width: 15vw;
+    width: 14vw;
     min-width: 150px;
+    padding: 2%;
 }
-.projectIcon{
-    width: 4vh;
-    height: 4vh;
-    margin: 2vh;
-    margin-right: 1vh;
-}
+
 .projectName{
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
 
+    margin-bottom: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -44,8 +44,7 @@
     color: #242D35;
 }
 
-.projectDescription{
-    margin: 2vh;
+.projectDescription, .langName{
     margin-top: 0;
     font-family: 'Roboto';
     font-style: normal;
@@ -56,13 +55,38 @@
     color: #4F5B67;
 }
 
-a{
-    text-decoration:none;
+.cardRodape{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.language{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.langColor{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #3333D1;
+    margin-right: 1px;
+    
+}
+
+.stats, .stars, .forks{
+    display: flex;
+    flex-direction: row;
+}
+.stats{
+    gap: 5px;
+}
+
+
+.data{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 150%;
-
-    color: #3333D1;
 }
