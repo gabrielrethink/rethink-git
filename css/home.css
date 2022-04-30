@@ -123,4 +123,5 @@ tbody td {
   font-size: 14px;
   line-height: 100%;
   color: #0c1116;
+  cursor: pointer;
 }

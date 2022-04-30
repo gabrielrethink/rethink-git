@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .title {
   display: flex;
   margin-top: 53px;
@@ -38,42 +43,22 @@
   box-sizing: border-box;
   border-radius: 32px;
 }
-
-/* .buttonBack {
-  border: none;
-  border: 1px solid #eaecee;
-  background-color: #ffffff;
-  font-weight: 500;
-  height: 14px;
-  left: 36px;
-  top: 13px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 100%;
-  color: #0c1116;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 8px;
-} */
-
 .corpo {
+  /* background-color: rebeccapurple; */
   display: flex;
   margin-top: 23px;
 }
 
 .description {
+  /* background-color: aqua; */
   margin-right: 80px;
   width: 698px;
-  height: 288px;
+  /* height: 288px; */
 }
 
 .Overview {
   display: flex;
+  /* background-color: blue; */
 }
 
 .Overview > h2 {
@@ -91,23 +76,58 @@
 
 .Overview > button {
   margin-top: 5px;
+  margin-right: 9px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: white;
+  /* color: white; */
   border: none;
-  width: 62px;
-  height: 24px;
-  background: #44c13c;
   border-radius: 12px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  height: 24px;
+}
+
+.js {
+  background: #f1e05a;
+  color: #000000;
+  width: 77px;
+}
+
+.html {
+  background: #e34c26;
+  color: #f2f2f2;
+  width: 53px;
+}
+
+.css {
+  background: #563d7c;
+  color: #f2f2f2;
+  width: 43px;
+}
+
+.ts {
+  background: #2b7489;
+  color: #f2f2f2;
+  width: 78px;
+}
+
+.json {
+  background: #292929;
+  color: #f2f2f2;
+  width: 51px;
 }
 
 .description > p {
   margin-top: 24px;
-
+  /* background-color: #2b7489; */
   width: 698px;
-  height: 288px;
+  /* height: 288px; */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -115,38 +135,41 @@
   line-height: 150%;
   color: #373f47;
 }
+
 .options {
-  /* background-color: red; */
-  width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  width: 701px;
+  height: 91px;
+
+  background: #f3f3f3;
+  border-radius: 15px;
 }
 
 .card {
-  margin-bottom: 20px;
+  margin: 0 12.5px;
   display: flex;
-  height: 86px;
-
-  width: 360px;
-  left: 0px;
-  top: 0px;
-  background: #ffffff;
+  width: 111.32px;
+  height: 68px;
   border: 1px solid #eaecee;
   box-sizing: border-box;
   border-radius: 12px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  background: #ffffff;
 }
 
 .card > svg {
-  margin-left: 30.32px;
-  margin-right: 31.5px;
-  margin-top: 34px;
+  margin: 26.13px 2px 0 16.25px;
+}
+
+.information {
+  width: 60px;
+  text-align: center;
 }
 
 .name {
-  margin-top: 20px;
-  margin-bottom: 8px;
-
+  margin: 14px 0 2px 3px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -162,4 +185,105 @@
   font-size: 16px;
   line-height: 150%;
   color: #4f5b67;
+}
+
+/* CSS PROFILE */
+
+.profile {
+  /* background-color: #2b7489; */
+  padding-left: 191px;
+}
+
+.cardUser {
+  width: 249px;
+  height: 332px;
+  background: #ffffff;
+  /* background-color: red; */
+  border: 1px solid #eaecee;
+  box-sizing: border-box;
+  border-radius: 12px;
+  text-align: center;
+  margin-right: 191px;
+}
+
+.cardUser > img {
+  width: 86px;
+  height: 86px;
+  border-radius: 100%;
+  margin-top: 22px;
+}
+
+.cardUser > h1 {
+  color: #242d35;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  margin-top: 10px;
+}
+
+.cardUser > p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  color: #4f5b67;
+  margin-top: 4px;
+}
+
+/* TABLE DENTRO DO CARD */
+
+table {
+  margin: auto; /* centraliza a table */
+  margin-top: 24px;
+  border: none;
+  border-collapse: collapse;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+}
+
+table td,
+table th {
+  border-left: 1px solid #f1f1f1;
+}
+
+table td:first-child {
+  border-left: none;
+}
+
+thead td {
+  font-size: 12px;
+  line-height: 150%;
+  color: #a8b0b9;
+  padding: 0 15px;
+  padding-bottom: 4px;
+}
+
+tbody td {
+  font-size: 14px;
+  line-height: 150%;
+  color: #373f47;
+}
+
+/* FIM DO STYLE TABLE */
+
+.cardUser button {
+  margin-top: 36px;
+  background: #ffffff;
+  border: 1px solid #eaecee;
+  box-sizing: border-box;
+  border-radius: 32px;
+  width: 112px;
+  height: 40px;
+  /* style font */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  color: #0c1116;
+  cursor: pointer;
 }

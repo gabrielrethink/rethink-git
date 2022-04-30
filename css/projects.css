@@ -1,49 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .cardProject {
   width: 263px;
   height: 171px;
-  left: 947px;
-  top: 244px;
   background: #ffffff;
+
   border: 1px solid #eaecee;
   box-sizing: border-box;
-  border-radius: 12px;
-  padding-left: 24px;
+  border-radius: 8px;
+
   margin-right: 29px;
   margin-bottom: 29px;
+
+  padding: 23px 30px 0 24px;
 }
 
 .title {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 24px;
-  /* margin-bottom: 24px; */
-}
-
-.title img {
-  width: 36px;
-  height: 36px;
-  border-radius: 4px;
+  margin-right: 11px;
 }
 
 .title h1 {
-  margin-left: 16px;
-  width: 47px;
-  height: 27px;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-
   color: #242d35;
 }
 
-.cardProject p {
-  margin: 16px 0;
-  width: 209px;
-  height: 36px;
-  left: 24px;
+.title p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.description p {
+  margin-top: 26px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #4f5b67;
+  min-height: 36px;
+}
+
+.baseboard {
+  display: flex;
+  margin-top: 22px;
+  align-items: center;
+  margin-left: 11px;
+}
+
+.Ellipse {
+  margin-right: 6px;
+}
+
+.js {
+  margin-right: 50px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -52,16 +75,23 @@
   color: #4f5b67;
 }
 
-.cardProject a {
-  width: 59px;
-  height: 18px;
-  left: 24px;
-  top: 128px;
+.iconShareStar {
+  margin-right: 3px;
+}
 
+.quantitysShareStar {
+  margin-right: 12px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
   line-height: 150%;
-  color: #3333d1;
+  /* or 18px */
+
+  display: flex;
+  align-items: center;
+
+  /* Barber Color/Independence */
+
+  color: #4a4e69;
 }
