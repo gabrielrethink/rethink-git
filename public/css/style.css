@@ -198,12 +198,14 @@ nav > img{
     align-items: flex-start;
     padding: 24px;
     width: 215px;
+    cursor: pointer;
 }
 
 .header{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .icon{
@@ -226,7 +228,13 @@ nav > img{
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    margin-left: 1em;
+}
+
+.visibility{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
 }
 
 .abstract{
@@ -246,6 +254,58 @@ nav > img{
     color: #3333D1;
     text-decoration: none;
     margin-top: 2em;
+}
+
+.footer-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.language{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.language > p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.color{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.icons-project{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+}
+
+.number{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    margin-left: 3px;
+}
+
+.icones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 footer{
@@ -304,14 +364,18 @@ footer{
 
 .layout{
     max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 520px;
 }
 
 .overview{
     display: flex;
     flex-direction: row;
-    width: 25%;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
 }
 
 .overview > h2{
@@ -321,8 +385,14 @@ footer{
     line-height: 150%;
 }
 
-.status{
-    width: 62px;
+.techs{
+    display: flex;
+    width: 420px;
+    gap: 8px;
+}
+
+.tech{
+    width: 78px;
     height: 24px;
     background: #44C13C;
     border-radius: 12px;
@@ -330,9 +400,6 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.status > p{
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -341,7 +408,6 @@ footer{
 }
 
 .project-description{
-    margin-top: 2.4em;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -354,8 +420,14 @@ footer{
 
 .infos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    width: 701px;
+    height: 91px;
+    background: #F3F3F3;
+    border-radius: 15px;
+    padding: 0 20px;
 }
 
 .info{
@@ -367,23 +439,34 @@ footer{
     border: 1px solid #EAECEE;
     box-sizing: border-box;
     border-radius: 12px;
-    width: 360px;
-    height: 86px;
-    margin-bottom: 30px;
-    padding: 30px;
+    width: 111.32px;
+    height: 68px;
+    padding: 12px;
+    text-align: center;
+}
+
+svg{
+    width: 18px;
+    height: 18px;
 }
 
 .info-details{
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .info-description{
+    font-weight: 500;
     margin-bottom: 0.4em;
     font-size: 14px;
-    font-weight: bold;
 }
 
 .info-invoicing{
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 16px;
     color: #4F5B67;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
 }
