@@ -1,17 +1,24 @@
-.showTitle {
-    width: 206px;
-    height: 43px;
+.projectShowTitle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 80px;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 500;
     line-height: 120%;
     color: #242D35;
 }
+
+.back {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+
+}
+
 
 .overview {
     margin-top: 25px;
@@ -32,8 +39,8 @@
     position: static;
     width: 62px;
     height: 24px;
-    left: 10px;
     top: 5px;
+    padding: 5px 10px 7px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -77,22 +84,27 @@
 }
 
 .projectAllStats {
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    margin-left: 70%;
-
-    gap: 20px;
+    width: 701px;
+    height: 91px;
+    top: 600px;
+    background: #F3F3F3;
+    border-radius: 15px;
 }
 
 .stats {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    width: 360px;
-    height: 86px;
+    width: 112px;
+    height: 68px;
     background: #FFFFFF;
     border: 1px solid #EAECEE;
     box-sizing: border-box;
     border-radius: 12px;
+    margin: 10px;
 }
 
 .statsData {
@@ -115,5 +127,5 @@
 }
 
 .icon {
-    margin: 0 26px;
+    margin: 0 10px;
 }

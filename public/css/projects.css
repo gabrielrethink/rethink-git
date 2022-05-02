@@ -35,13 +35,25 @@
 }
 
 .projectCardTitle>h1 {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
     text-align: left;
     font-size: 18px;
     color: #242d35;
+    text-decoration: none;
+}
+
+.projectCardTitle>p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #4f5b67;
+    margin-left: 40px;
+    margin-top: 0px;
 }
 
 .projectCard>p {
@@ -54,12 +66,39 @@
     color: #4f5b67;
 }
 
-.projectCard>a {
+.projectCardTitle>a {
     font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    font-size: 18px;
+    color: #242d35;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    color: #3333d1;
-    margin-top: 8px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 86px;
+}
+
+.statsText {
+    display: inline;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #373f47;
+    margin: 5px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background-color: yellow;
+    margin: 5px;
+    border-radius: 50%;
 }
