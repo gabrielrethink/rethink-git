@@ -9,8 +9,11 @@ const renderProjects = async () => {
 
   console.log(projects);
   projects.forEach((element) => {
+    // console.log(element.login);
     cards.innerHTML += `
-    <div class="cardProject">
+    <div class="cardProject" onClick="goToProjectById('${element.name}', '${
+      element.owner.login
+    }')">
             <div class="title">
               <h1 class="name">${
                 element.name.length > 17
@@ -56,7 +59,7 @@ const renderProjects = async () => {
                 />
               </svg>
               <p class="quantitysShareStar">${
-                element.fork ? element.forks : ":)"
+                element.fork_count ? element.fork_count : ":)"
               }</p>
               <svg
                 class="iconShareStar"
@@ -74,12 +77,18 @@ const renderProjects = async () => {
                 />
               </svg>
               <p class="quantitysShareStar">${
-                element.watchers ? element.watchers : ":)"
+                element.stargazers_count ? element.stargazers_count : ":)"
               }</p>
             </div>
           </div>
     `;
   });
+};
+
+const goToProjectById = (nameProject, nameUser) => {
+  console.log(nameProject);
+  console.log(nameUser);
+  window.location.href = `./projectById.html?nameProject=${nameProject}&nameUser=${nameUser}`;
 };
 
 const backHome = () => {
