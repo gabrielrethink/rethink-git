@@ -6,26 +6,34 @@ body{
   display: flex;
   flex-direction: column;
   margin: 0;
-  max-width: 1280px;
 }
 
 .titleImg{
-  margin: 10px auto;
+  height: 30%;
+  margin: 30px auto;
+}
+.homeImg{
+  color: #fff !important;
+  position: absolute;
+  margin: 10px;
+
 }
 
 nav{
-  position:fixed; top:0; left:0%;
-  display: flex;
+  position:relative; 
+  top:0; 
+  left:0%;
   width: 100vw;
-  height: 50px;
+  height: 100px;
   display: flex;
   background-color: #343434;
 }
 
 body{
-  width: 100vw;
-  height: 84vh;
+  width: 1280PX;
+  height: 90%;
   background-color: #fff;
+  
 }
 
 
@@ -37,6 +45,7 @@ body{
   position: static;
   margin-top: 70px;
   margin-left: 100px;
+
 }
 
 .research{
@@ -45,17 +54,26 @@ body{
   border-radius: 40px;
   padding: 0 20px;
   background: #FAFAFA;
+  background-image: url(../img/searchIcon.png);
+  background-position: 96%;
+  background-repeat: no-repeat;
 }
 
 .button{
+  position: relative;
   top: 0; 
-  right: 0;
+  right: 50;
   width: 20px;
   height: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   background: #FAFAFA;
-  z-index: -1;
+}
+.mid{
+  margin: auto;
+  margin-bottom: 1px;
+  min-height: 580px;
+  width: 100vw;
 }
 
 h1{
@@ -75,29 +93,29 @@ h1{
 }
 
 .peopleCard{
-  margin: 0 0 100px 0;
-  gap: 3vw;
-  justify-content: center;
-  width: 100%;
   display: flex;
+  justify-content: space-evenly;
+  max-width: 1137px;
   flex-wrap: wrap;
   background-color: #fff;
+  margin: auto;
 }
 
 .indivCard{
-  width: 249px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  width: 249px;
   border: 1px solid #EAECEE;
+  margin-bottom: 30px
 }
 
 .profilePic{
   border-radius: 100%;
   width: 100px;
-  margin: 3vh 0 1vh 0;
+  margin: 12px 0 4px 0;
 }
 
 .indivCard > .indivName{
@@ -119,14 +137,11 @@ h1{
   font-weight: 300;
   font-size: 12px;
   line-height: 150%;
-  /* identical to box height, or 18px */
-  
   text-align: center;
   margin-top: 01vh;
-  /* Gray/600 */
-  
   color: #4F5B67;
 }
+
 table{
   margin: 2vh 0;
 }
@@ -159,7 +174,7 @@ td{
   color: #373F47;
 }
 
-td + td, th+th  { 
+td + td, th + th  { 
   border-left: 2px solid #F1F1F1; 
 }
 .seeIndiv{
@@ -188,8 +203,10 @@ td + td, th+th  {
 
 
 footer{
-  width: 100vw;
-  height: 3vh;
+  display: block;
+  padding: 20px;
+  height: 1vh;
   background-color: #343434;
-  position:fixed; bottom:0; left:0%;
+  width: 100vw;
+
 }

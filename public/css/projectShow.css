@@ -3,6 +3,7 @@
 body{
     /* background-color: aqua; */
 }
+
 .firstLine{
     margin: 10vh;
     margin-bottom: 3vh;
@@ -51,11 +52,11 @@ button{
     line-height: 150%;
     color: #242D35;
 }
-.verified{
+.langName{
     display: flex;
-    background: #44C13C;
     border-radius: 12px;
-    width: 62px;
+    width: fit-content;
+    padding: 0.5px 10px;
     height: 24px;
     justify-content: center;
     align-items: center;
@@ -75,9 +76,7 @@ button{
 }
 
 .projectDescriprion{
-    margin: 10vh;
-    margin-top: 0;
-    width: 55vw;
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -91,30 +90,39 @@ button{
     color: #373F47;
 
 }
+.projectDescriprion, .stats{
+    margin: 10vh;
+    margin-top: 0;
+    width: 55vw;
+}
 
 .secondPart{
     display: flex;
     flex-direction: row;
 }
-
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #F3F3F3;
+    border-radius: 15px;
+}
 .indivStats{
     display: flex;
     border: 1px solid #EAECEE;
-    box-sizing: border-box;
     border-radius: 12px;
     align-items: center;
-    flex: none;
+    justify-content:center;
     order: 0;
-    flex-grow: 0;
-    width: 30vw;
     height: 10vh;
     min-height: 60px;
-    margin: 5%;
+    min-width: 10%;
+    background-color: #fff;
 }
 
 .statsImg{
     height: 30%;
-    margin-left: 5%;
 }
 .statsData{
     display: flex;
