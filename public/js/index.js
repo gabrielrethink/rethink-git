@@ -1,7 +1,7 @@
 const peopleCard = document.getElementById("peopleCard");
 
 const userName="lucaspaula6";
-const token="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";
+const token="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";
 
 let users =  [  "arthur-vargas",
         "MilagreRethink",
