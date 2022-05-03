@@ -1,5 +1,5 @@
 const cards_div = document.querySelector('.cards');
-const users = [
+const usersArray = [
     "arthur-vargas",
     "MilagreRethink",
     "loubackrethink",
@@ -20,11 +20,19 @@ const users = [
     "Luisrethink",
     "sthephanytezza-dev",
 ];
+const search_div = document.getElementById("input-search");
 
-const gitGetUsers = async (users) =>{
+const gitGetUsers = async (users, filter) =>{
+
+    if(filter){
+        users = users.filter((user) => user.toLowerCase().includes(filter.toLowerCase()));
+    }
+    
+    cards_div.innerHTML = "";
 
     users.map(async (user) => {
         user = await fetch(`https://api.github.com/users/${user}`).then((response) => response.json());
+        console.log(user);
         cards_div.innerHTML += `
             <div class="card">
                 <img src="${user.avatar_url}" alt="">
@@ -56,4 +64,8 @@ const redirect = (login) => {
     window.location.href = `./project.html?login=${login}`;
 }
 
-window.addEventListener("DOMContentLoaded", () => gitGetUsers(users));
+const load = () => {
+    gitGetUsers(usersArray, search_div.value);
+}
+
+window.addEventListener("DOMContentLoaded", () => gitGetUsers(usersArray));

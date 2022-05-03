@@ -66,6 +66,10 @@ nav > img{
     color: #D6DADE;
 }
 
+.search > span{
+    cursor: pointer;
+}
+
 .title{
     margin-top: 57px; 
     display: flex;
@@ -177,6 +181,11 @@ nav > img{
     box-sizing: border-box;
     border-radius: 32px;
     font-size: 14px;
+    cursor: pointer;
+}
+
+.card > button:hover{
+    background: #e2e2e2;
 }
 
 .cards-project{
@@ -199,6 +208,11 @@ nav > img{
     padding: 24px;
     width: 215px;
     cursor: pointer;
+}
+
+.card-project:hover{
+    -webkit-filter: drop-shadow(10px 7px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(10px 7px 5px rgba(0,0,0,.5));
 }
 
 .header{

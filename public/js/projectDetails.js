@@ -13,12 +13,15 @@ const commit_div = document.querySelector('.commit');
 const userName = 'sthephanytezza-dev';
 const token = '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';
 
+let login = '';
+
 const getProject = async () =>{
     const project = await fetch(`https://api.github.com/repos/${projectName}`, {headers: { Authorization: "Basic" + btoa(`${userName}:${token}`)}}).then((res) => res.json());
     const colors = await fetch(`http://localhost:3000/colors`).then((response) => response.json());
     const user = await fetch(`https://api.github.com/users/${project.owner.login}`).then((response) => response.json());
 
     productTitle_div.innerHTML = project.name;
+    login = user.login;
 
     const languages = await fetch(`https://api.github.com/repos/${projectName}/languages`, {headers: { Authorization: "Basic" + btoa(`${userName}:${token}`)}}).then((res) => res.json());
 
@@ -63,8 +66,8 @@ const getProject = async () =>{
     projectDescription_div.innerHTML = project.description;
 }
 
-const redirect = (login) => {
-    window.location.href = `./project.html?login=${login}`;
+const redirect = () => {
+   window.location.href = `./project.html?login=${login}`;
 }
 
 window.addEventListener("DOMContentLoaded", () => getProject());
