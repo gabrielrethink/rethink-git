@@ -1,28 +1,37 @@
+const user = new URLSearchParams(window.location.search).get("user");
+
 const cards_div = document.querySelector(".projectAllCards");
 
-const user = new URLSearchParams(window.location.search).get("user");
-console.log(user);
-
 const gitGetUsers = async () => {
-  let template = "";
-
   const projects = await fetch(
     `https://api.github.com/users/${user}/repos`
   ).then((res) => res.json());
 
   projects.forEach((project) => {
     cards_div.innerHTML += `
-      <div class="projectCard">
+      <div onclick="getSingleProject('${project.owner.login}', '${
+      project.name
+    }')" class="projectCard">
         <div class="projectCardTitle">
-          <img src="/public/img/projectIcon.jpg" />
-          <a href="/public/html/showProject.html"><h1>${project.name}</a></h1>
+          <h1>${
+            project.name.length > 12
+              ? project.name.slice(0, 12) + "..."
+              : project.name
+          }</h1>
           <p>${project.visibility}</p>
         </div>
         <p>
-          ${project.description}
+          ${
+            project.description != null && project.description.length > 64
+              ? project.description.slice(0, 64) + "..."
+              : project.description == null
+              ? "No description"
+              : project.description
+          }
         </p>
         <div class="stats">
         <div class="circle"></div>
+
         ${project.language}
         <p class="statsText"><img src="/public/img/Fork.png" />      
         ${project.forks_count}
@@ -34,6 +43,11 @@ const gitGetUsers = async () => {
       </div>
         `;
   });
+};
+
+const getSingleProject = (user, project) => {
+  // console.log({ user, project });
+  window.location.href = `showProject.html?user=${user}&project=${project}`;
 };
 
 window.addEventListener("DOMContentLoaded", () => gitGetUsers());

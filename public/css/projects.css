@@ -80,8 +80,9 @@
 .stats {
     display: flex;
     align-items: center;
-    width: 360px;
-    height: 86px;
+    gap: 5px;
+    width: 174px;
+    height: 65px;
 }
 
 .statsText {
@@ -92,7 +93,7 @@
     font-size: 14px;
     line-height: 100%;
     color: #373f47;
-    margin: 5px;
+    margin: 3px;
 }
 
 .circle {
