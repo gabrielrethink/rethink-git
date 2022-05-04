@@ -1,43 +1,47 @@
-
 const login = new URLSearchParams(window.location.search).get("login");
-console.log(login);
+// console.log(login);
 const name = new URLSearchParams(window.location.search).get("name");
-console.log(name);
+// console.log(name);
+const userName = "lucaspaula6";
+const token = "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";
 
+const projectName_div = document.getElementById("projectName");
+const overview_div = document.getElementById("overview");
+const projectDescriprion_div = document.getElementById("projectDescriprion");
 
 const renderProject = async () => {
-    const urlProject = `https://api.github.com/repos/${login}/${name}`;
-    const project = await fetch(urlProject).then((response) => response.json());
+  const urlProject = `https://api.github.com/repos/${login}/${name}`;
+  const urlColors = `http://localhost:3000/color`;
+  const urlLang = `https://api.github.com/repos/${login}/${name}/languages`;
+  const urlUser = `https://api.github.com/users/${login}`;
 
-    const urlLang = `https://api.github.com/repos/${login}/${name}/languages`;
-    const languages = await fetch(urlLang).then((response) => response.json());
-    console.log(project);
+  const project = await fetch(urlProject, {
+    headers: { Authorization: "Basic" + btoa(`${userName}:${token}`) },
+  }).then((response) => response.json());
 
-    const projectName = document.getElementById("projectName");
-    projectName.innerHTML = project.name;
+  const languages = await fetch(urlLang, {
+    headers: { Authorization: "Basic" + btoa(`${userName}:${token}`) },
+  }).then((response) => response.json());
+  //   console.log(project);
+  const colors = await fetch(urlColors).then((response) => response.json());
 
-    const overview = document.getElementById("overview");
-    const arr= Object.keys(languages);
-    console.log(arr);
-    arr.forEach(language=>{
-        overview.innerHTML+=`<div class="langName" style="background-color:#F1E05A;">${language}</div>`;
-    });
+  projectName_div.innerHTML = project.name;
+  console.log(project);
+  projectDescriprion_div.innerHTML = project.description;
 
+  const arr = Object.keys(languages);
+  //   console.log(arr);
+  arr.forEach((language) => {
+    const color = colors[language].color;
+    // console.log(language);
+    overview_div.innerHTML += `<div class="langName" style="background-color:${color};">${language}</div>`;
+  });
 
-
-
-
-
-
-}
-
-function getColor(langName){
-    const urlProject = `http://localhost:3000/${langName}`;
-    const project = await fetch(urlProject).then((response) => response.json());
-
-}
+  const userData = await fetch(urlUser, {
+    headers: { Authorization: "Basic" + btoa(`${userName}:${token}`) },
+  }).then((res) => res.json());
+};
 
 // `https://api.github.com/repos/${login}/${name}`
-
 
 window.addEventListener("DOMContentLoaded", () => renderProject());
