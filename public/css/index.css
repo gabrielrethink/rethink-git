@@ -6,34 +6,67 @@
   padding: 0;
 }
 html {
-  width: 100%;
+  width: 100vw;
 }
+
 body {
   background: #ffffff;
-  max-width: 1280px;
   margin: 0 auto;
 }
 
-.logoNav{
+.nav{
   display: flex;
   width: 100%;
   height: 100px;
   background-color: #343434;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
-  position: fixed;
-  top: 0;
-  left: 0;
+}
+
+.navBar{
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  justify-content: space-between;
+
+}
+
+.navBtn{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+
+}
+
+.homeBtn{
+  width: 75px;
+  height: 28px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.logoNav{
+  display: flex;
+  justify-content: center;
+}
+
+.spaceNav{
+  width: 75px;
 }
 
 .main{
-  margin: 142px 30px;
+  margin: 142px auto;
+  max-width: 1280px;
 }
 
 .searchOut{
   display: flex;
-  /* justify-content: center; */
 }
 
 .search{
@@ -61,7 +94,6 @@ body {
 
 .title{
   display: flex;
-  /* justify-content: center; */
 }
 
 .verticalRetangle{
@@ -93,14 +125,12 @@ body {
 }
 
 .card{
+  display: flex;
   width: 249px;
   height: 332px;
-  
-  /* Base/background white */
-  
+  flex-direction: column;
+  align-items: center;
   background: #FFFFFF;
-  /* Gray/200 */
-  
   border: 1px solid #EAECEE;
   box-sizing: border-box;
   border-radius: 12px;
@@ -110,17 +140,14 @@ body {
   width: 86px;
   height: 86px;
   border-radius: 50%;
-  left: 81px;
-  top: 22px;
-  margin: 22px 0px 10px 81px;
+  margin: 22px 0px 10px 0px;
 }
 
 .card > p{
   display: flex;
-  width: 85px;
+  width: 100%;
   height: 21px;
-  margin-left: 81px;
-  
+  justify-content: center; 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
@@ -130,10 +157,10 @@ body {
 }
 
 .card > small{
-  width: 52px;
+  display: flex;
+  width: 100%;
   height: 18px;
-  margin-left: 98px;
-  
+  justify-content: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
@@ -145,34 +172,35 @@ body {
 .features{
   display: flex;
   margin-top: 30px;
-  margin-left: 33px;
-  margin-bottom: 20px;
 }
 
 .split{
   width: 0px;
   border: 1px solid #F1F1F1;
+  margin: 0px 10px;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects > p{
   width: 44px;
   height: 18px;
-  margin-right: 11px;
-  
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 150%;
-  
   color: #A8B0B9;
 }
 
 .projects > small{
+  display: flex;
   width: 16px;
   height: 21px;
-  margin-left: 12px;
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
@@ -181,25 +209,28 @@ body {
   color: #373F47;
 }
 
-.stars > p{
+.following{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.following > p{
   width: 44px;
   height: 18px;
-  margin-left: 19px;
-  
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 150%;
-  
   color: #A8B0B9;
 }
 
-.stars > small{
+.following > small{
   width: 16px;
   height: 21px;
-  margin-left: 21px;
-
+  margin-left: 15px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
@@ -208,25 +239,26 @@ body {
   color: #373F47;
 }
 
+.followers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .followers > p{
-  width: 44px;
+  width: 100%;
   height: 18px;
-  margin-left: 8px;
-  
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 150%;
-  
   color: #A8B0B9;
 }
 
 .followers > small{
   width: 16px;
   height: 21px;
-  margin-left: 25px;
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
@@ -239,7 +271,6 @@ footer{
   width: 100%;
   height: 13px;
   background: #343434;
-
   position: fixed;
   bottom: 0;
   left: 0;
@@ -252,9 +283,8 @@ footer{
   padding: 13px 20px;
   width: 112px;
   height: 40px;
-  margin-left: 68px;
   margin-top: 36px;
-
+  margin-bottom: 20px;
   background: #FFFFFF;
   border: 1px solid #EAECEE;
   box-sizing: border-box;
@@ -268,6 +298,14 @@ footer{
   display: flex;
 }
 
+.cardsProjects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 66px;
+  gap: 50px;
+}
+
 .cardProjects{
   width: 263px;
   height: 171px;
@@ -277,19 +315,22 @@ footer{
   border: 1px solid #EAECEE;
   box-sizing: border-box;
   border-radius: 8px;
-  padding: 24px 30px 24px 24px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.titleCardsProjects{
+.navCardsProjects{
   display: flex;
-  width: 36px;
+  width: 95%;
   height: 36px;
-  background: #343434;
-  border-radius: 4px;
+  justify-content: space-between;
 }
 
 .titleProjectCards{
-  width: 47px;
+  /* width: 47px; */
   height: 27px;
   font-family: 'Roboto';
   font-style: normal;
@@ -297,15 +338,23 @@ footer{
   font-size: 18px;
   line-height: 150%;
   color: #242D35;
+  /* margin-top: 5px; */
+}
 
-  margin-top: 5px;
-  margin-left: 16px;
+.visibilityProject{
+  width: 37px;
+  height: 21px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
 }
 
 .textProjectCard{
   width: 209px;
   height: 36px;
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -314,19 +363,64 @@ footer{
   color: #4F5B67;
   margin-top: 16px;
   margin-bottom: 16px;
+  text-align: justify;
 }
 
-.btnProjectCard{
-  width: 59px;
-  height: 18px;
+.footerProjectCard{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 
+.cardLanguageItens{
+  display: flex;
+  align-items: center;
+}
+
+.cardLanguageColor{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.cardlanguage{
+  height: 18px;
+  margin-left: 6px;
+  
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  color: #3333D1;
-  text-decoration: none;
+  color: #4F5B67;  
+}
+
+.svgDetailCP{
+  margin: 0;
+}
+
+.detailsCardProject{
+  display: flex;
+  gap: 10px;
+}
+
+.detailCardProject{
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.detailNumber{
+  width: 10px;
+  height: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #4A4E69;
 }
 
 /* PAGINA DE SHOW PROJECT*/
@@ -337,7 +431,7 @@ footer{
 }
 
 .showTitle{
-  width: 206px;
+  /* width: 206px; */
   height: 43px;
 
   font-family: 'Roboto';
@@ -367,25 +461,17 @@ footer{
 
 .showVerifiedBox{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* padding: 5px 10px 7px; */
-  
-  width: 62px;
-  height: 24px;
+
   margin-left: 20px;
   margin-top: 8px;
   
   /* Green/500 */
-  
-  background: #44C13C;
-  border-radius: 12px;
 }
 
 .showVerified{
-  width: 42px;
-  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   font-family: 'Roboto';
   font-style: normal;
@@ -398,6 +484,12 @@ footer{
   order: 0;
   flex-grow: 0;
   margin: 0px 10px;
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+
+.showBodyText{
+  margin-left: 10px;
 }
 
 .showText{
@@ -411,6 +503,61 @@ footer{
   font-size: 16px;
   line-height: 150%;
   color: #373F47;
+}
+
+.featureBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 701px;
+  height: 91px;
+  
+  background: #F3F3F3;
+  border-radius: 15px;
+}
+
+.featureBox{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-left: 14px;
+  width: 111.32px;
+  height: 68px;
+  background: #FFFFFF;
+  border: 1px solid #EAECEE;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.featureBoxText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.featureBoxText >h1{
+  width: 100%;
+  height: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: #373F47;
+}
+
+.featureBoxText > p{
+  width: 100%;
+  height: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4F5B67;
 }
 
 .showBodyCards{
@@ -457,52 +604,6 @@ footer{
   border: none;
 }
 
-.projectsStats{
-  display: flex;
-}
-
-.stats{
-  display: flex;
-  width: 360px;
-  height: 86px;
-  align-items: center;
-
-  background: #FFFFFF;
-  border: 1px solid #EAECEE;
-  box-sizing: border-box;
-  border-radius: 12px;
-  margin: 20px 0px;
-}
-
-svg{
-  margin-left: 30px;
-}
-
-.statsData{
-  margin-left: 31px;
-}
-
-.statsTitle{
-  width: 26px;
-  height: 14px;
-  margin-bottom: 8px;
-  
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 100%;
-  color: #373F47;
-}
-
-.statsSubTitle{
-  width: 36px;
-  height: 24px;
-  
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #4F5B67;
+.cardShowProduct{
+  margin-top: 50px;
 }
