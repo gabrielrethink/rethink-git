@@ -1,6 +1,6 @@
 const login = new URLSearchParams(window.location.search).get("login");
 const userName = "lucaspaula6";
-const token = "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";
+const token = "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";
 
 const projectCards = document.getElementById("projectCards");
 const colors = {

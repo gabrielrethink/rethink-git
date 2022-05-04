@@ -3,7 +3,7 @@ const login = new URLSearchParams(window.location.search).get("login");
 const name = new URLSearchParams(window.location.search).get("name");
 // console.log(name);
 const userName = "lucaspaula6";
-const token = "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";
+const token = "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";
 
 const projectName_div = document.getElementById("projectName");
 const overview_div = document.getElementById("overview");
@@ -37,9 +37,31 @@ const renderProject = async () => {
     overview_div.innerHTML += `<div class="langName" style="background-color:${color};">${language}</div>`;
   });
 
-  const userData = await fetch(urlUser, {
+  const user = await fetch(urlUser, {
     headers: { Authorization: "Basic" + btoa(`${userName}:${token}`) },
   }).then((res) => res.json());
+  const profilePic = document.getElementById("profilePic");
+  const indivName = document.getElementById("indivName");
+  const indivJob = document.getElementById("indivJob");
+  const indivProjects = document.getElementById("indivProjects");
+  const indivStars = document.getElementById("indivStars");
+  const indivFollowers = document.getElementById("indivFollowers");
+
+  let info = {
+    login: user.login,
+    name: user.name == null ? user : user.name,
+    company: user.company == null ? "Rethink" : user.company,
+    repos: user.public_repos,
+    followers: user.followers,
+    avatar: user.avatar_url,
+  };
+
+  profilePic.src = info.avatar;
+  indivName.innerHTML = info.name;
+  indivJob.innerHTML = info.company;
+  indivProjects.innerHTML = info.repos;
+  indivStars.innerHTML = "?";
+  indivFollowers.innerHTML = info.followers;
 };
 
 // `https://api.github.com/repos/${login}/${name}`
