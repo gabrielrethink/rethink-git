@@ -1,52 +1,32 @@
-<!DOCTYsmallE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav>
-      <div>
-        <a href="index.html"><h1>Home</h1></a>
-      </div>
-      <img src="img/rethink.png" alt="Rethink" srcset="" />
-      <div></div>
-    </nav>
-    <main>
-      <input type="text" class="search" placeholder="Busque por um usuário:" />
-
-      <div class="pTitle">
-        <div class="blackSpace"></div>
-        <p>Main Users</p>
-      </div>
-
-      <div class="userCards">
-        <div class="userCard">
-          <img src="./img/taylor.jpg" />
-          <p>Taylor Swift</p>
-          <small>Facebook</small>
-          <div class="table">
-            <div class="tableProjects">
-              <p>Projects</p>
-              <small>24</small>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Rethink</title>
+    </head>
+    <body>
+        <nav>
+            <img src="./img/logo.png" alt="">
+        </nav>
+        <div class="container">
+            <div class="search">
+                <input type="text" id="input-search" name="input-search" class="input-search" placeholder="Busque por um usuário:">
+                <span onclick='load()'><img src="./img/search.png" alt=""></span>
             </div>
-            <div class="tableStars">
-              <p>Stars</p>
-              <small>132</small>
+            <div class="title">
+                <div class="bar"></div>
+                <h1>Principais usuários:</h1>
             </div>
-            <div class="tableFollowers">
-              <p>Followers</p>
-              <small>31</small>
+            <div class="cards">
+               
             </div>
-          </div>
-          <button id="profile">View Profile</button>
         </div>
-      </div>
-    </main>
-    <footer></footer>
-    <script src="./js/home.js"></script>
-  </body>
+        <footer>
+
+        </footer>
+        <script src="./js/index.js"></script>
+    </body>
 </html>
