@@ -6,42 +6,42 @@ let users = ["gabrielrethink"];
 
 const gitGetProjects = async (users) => {
     let template = "";
-    
+
     const projects = await fetch(`https://api.github.com/users/${user}/repos`).then((res) =>
-      res.json()
+        res.json()
     );
-  
+
+    const colors = await fetch(`http://localhost:3000/languages`).then((res) =>
+        res.json()
+    );
+
+    console.log(colors["JavaScript"]);
+
     projects.map(async (project) => {
 
-      console.log(project);
+        console.log(project);
 
-      /* let info = {
-        name: project.name,
-        description: project.description,
-      }; */
+        /* let info = {
+          name: project.name,
+          description: project.description,
+        }; */
 
-      //console.log(info);
-  
-      cards_div.innerHTML += `
-      <div class="cardProject">
-            <div class="title">
-              <h1 class="name">${
-                project.name.length > 17
-                  ? project.name.slice(0, 14) + "..."
-                  : project.name
-              }</h1>
+        //console.log(info);
+
+        cards_div.innerHTML += `
+        <div class="cardProject" onclick="getButton('${project.name}', '${project.owner.login}')"=>
+        <div class="title">
+              <h1 class="name">${project.name.length > 17
+                ? project.name.slice(0, 14) + "..."
+                : project.name
+            }</h1>
               <p>${project.visibility}</p>
             </div>
             <div class="description">
-              <p>${
-                //   project.description && project.description.length > 80
-                //   EQUIVALENTE
-                project.description?.length > 80
-                  ? project.description.slice(0, 70) + "..."
-                  : project.description
-                  ? project.description
-                  : "No description :)"
-              }</p>
+              <p>${project.description?.length > 80? project.description.slice(0, 70) + "..."
+                : project.description ??
+                     "No description."
+        }</p>
             </div>
             <div class="baseboard">
               <svg
@@ -52,9 +52,9 @@ const gitGetProjects = async (users) => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <circle cx="6" cy="6" r="6" fill="#F1E05A" />
+                <circle cx="6" cy="6" r="6" fill="${colors[project.language].color}" />
               </svg>
-              <p class="js">${project.language}</p>
+              <p class="js">${project.language?? "JavaScript"}</p>
               <svg
                 class="iconShareStar"
                 width="15"
@@ -68,9 +68,8 @@ const gitGetProjects = async (users) => {
                   fill="black"
                 />
               </svg>
-              <p class="quantitysShareStar">${
-                project.fork ? project.forks : ""
-              }</p>
+              <p class="quantitysShareStar">${project.fork ? project.forks : ""
+            }</p>
               <svg
                 class="iconShareStar"
                 width="17"
@@ -86,16 +85,26 @@ const gitGetProjects = async (users) => {
                   stroke-linejoin="round"
                 />
               </svg>
-              <p class="quantitysShareStar">${
-                project.watchers ? project.watchers : ""
-              }</p>
+              <p class="quantitysShareStar">${project.watchers ? project.watchers : ""
+            }</p>
             </div>
           </div>
       `;
-  
-      
-    });
-  };
 
-  window.addEventListener("DOMContentLoaded", () => gitGetProjects(users));
-  
+
+    });
+};
+
+const viewProfile_tag = document.querySelector(".viewProfile")
+
+const getButton = (nameProject, nameUser) => {
+
+    console.log(nameUser);
+    console.log(nameProject);
+   // window.location.href = `./projectById.html?nameProject=${nameProject}&nameUser=${nameUser}`;
+   window.location.href = `./showProject.html?nameProject=${nameProject}&nameUser=${nameUser}`
+  }
+
+
+
+window.addEventListener("DOMContentLoaded", () => gitGetProjects(users));

@@ -209,6 +209,7 @@ button {
     border: 1px solid #eaecee;
     box-sizing: border-box;
     border-radius: 32px;
+    cursor:pointer;
 }
 
 
@@ -361,6 +362,7 @@ button {
     margin-bottom: 29px;
   
     padding: 23px 30px 0 24px;
+    cursor: pointer;
   }
   
   .title {

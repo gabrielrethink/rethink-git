@@ -46,8 +46,8 @@ const gitGetUsers = async (users) => {
     template += `
     <div class="userCard">
     <img src="${user.avatar_url}" />
-    <p>${user.name}</p>
-    <small>${user.company}</small>
+    <p>${user.name ?? "No Name"}</p>
+    <small>${user.company ?? "No Company"}</small>
     <div class="table">
       <div class="tableProjects">
         <p>Prjects</p>
